@@ -1,12 +1,32 @@
 <%- include('partials/header') %>
 
-<h1>Home</h1>
+<div class="content-row">
+    <div class="blogbox">
+        <div class="heading">
+            <h1>Home</h1>
+        </div>
+        <div class="content">
+            <p><%= homeStartingContent %></p>
+        </div>
+    </div>
+</div>
 
-<p><%= homeStartingContent %></p>
+<div>
+    <% posts.forEach(element => { %>
+    <div class="col-sm-6 col-lg-3 content-row">
+        <div class="blogbox">
+            <div class="heading">
+                <h1><%= element.title %></h1>
+            </div>
+            <hr>
+            <div class="content">
+                <p>
+                    <%= element.content.substring(0 , 90)%> ...<a href="/posts/<%= element.title %>">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
 
-<% posts.forEach(element => { %>
-<h1><%= element.title %></h1>
-<p><%= element.content.substring(0 , 90)%> ...<a href="/posts/<%= element.title %> ">Read more</a></p>
-<% }) %>
-
+    <% }) %>
+</div>
 <%- include('partials/footer') %>

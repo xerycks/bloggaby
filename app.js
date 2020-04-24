@@ -49,8 +49,6 @@ app.get('/posts/:postTitle', function (req, res) {
         heading: posts[pN].title,
         para: posts[pN].content
       })
-    } else {
-      res.send("uh-oh !! this page hasn't been published yet")
     }
   }
 

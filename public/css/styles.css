@@ -24,8 +24,6 @@ body {
   font-family: "Hammersmith One", sans-serif;
   letter-spacing: 3px;
   font-size: 3rem;
-  position: relative;
-  top: 5px;
 }
 
 .navbar-nav li a {

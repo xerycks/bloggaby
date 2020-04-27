@@ -5,12 +5,20 @@ const loda = require("lodash");
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  "mongodb+srv://xerycks:12345678qwe@cluster0-cnzva.mongodb.net/blogDB",
-  {
+  "mongodb://localhost:27017/blogDB", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }
 );
+
+// mongoose.connect(
+//   "mongodb+srv://xerycks:12345678qwe@cluster0-cnzva.mongodb.net/blogDB",
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   }
+// );
+
 
 const app = express();
 
@@ -42,12 +50,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/about", (req, res) =>
-  res.render("about", {
-    aboutContent: "You'll Know Soon",
-  })
-);
-
 app.get("/contact", (req, res) =>
   res.render("contact", {
     contactContent: "Nothing Yet",
@@ -78,8 +80,7 @@ app.get("/post", function (req, res) {
 });
 
 app.get("/posts/:postTitle", function (req, res) {
-  Post.findOne(
-    {
+  Post.findOne({
       blogTitle: req.params.postTitle,
     },
     function (err, result) {
@@ -95,6 +96,6 @@ app.get("/posts/:postTitle", function (req, res) {
   );
 });
 
-app.listen(process.env.PORT || 5000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server started on port 3000");
 });

@@ -2,18 +2,22 @@
 
 <div>
     <% posts.forEach(element => { %>
+
     <div class="col-sm-6 col-lg-3 content-row">
-        <div class="blogbox">
-            <div class="heading">
-                <h1><%= element.blogTitle %></h1>
-            </div>
-            <hr>
-            <div class="content">
-                <p>
-                    <%= element.blogContent.substring(0 , 200)%> . . .<a href="/posts/<%= element.blogTitle %>">...Read
-                        More</a>
-                </p>
-            </div>
+        <div class="blogbox" o>
+            <span href="/posts/<%= element.blogTitle %>">
+                <div class="heading">
+                    <h1><%= element.blogTitle %></h1>
+                </div>
+                <hr>
+                <div class="content">
+                    <p>
+                        <%= element.blogContent.substring(0 , 200)%> . . .<a
+                            href="/posts/<%= element.blogTitle %>">...Read
+                            More</a>
+                    </p>
+                </div>
+            </span>
         </div>
     </div>
 

@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Hammersmith+One|Montserrat&display=swap");
 
 body {
-  /* background: linear-gradient(60deg, #511845 1%, #900c3f 70%); */
   background-color: rgb(41, 19, 19);
   background-size: cover;
   min-height: 100vh;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -34,7 +33,7 @@ body {
 }
 
 .navbar-nav li a:hover {
-  color: #1abc9c !important;
+  color: #ffffff !important;
 }
 
 .content-row {
@@ -42,10 +41,7 @@ body {
 }
 
 .blogbox {
-  /* border: 1px solid rgb(255, 255, 255); */
   background: linear-gradient(60deg, orange, brown);
-  /* box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.493); */
-  /* -5px -5px 6px 3px rgba(255, 255, 255, 0.329); */
   border-radius: 20px;
   margin: 20px auto 20px;
   height: 250px;
@@ -78,12 +74,28 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.post {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 50px;
+}
+
 .bloghead {
+  color: white;
+  font-family: "Hammersmith One", sans-serif;
+  margin-bottom: 50px;
+}
+
+.social {
+  align-items: center;
   text-align: center;
+  position: relative;
+  top: 100px;
 }
 
 .social i {
   color: White;
+  margin: auto 10px;
 }
 
 .footer {
@@ -100,4 +112,102 @@ body {
   font-size: 15px;
   color: #fff;
   font-weight: 600;
+}
+
+.login-form {
+  width: 360px;
+  background: #f1f1f1;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form h1 {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.txtb {
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb input {
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb textarea {
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.txtb span::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(60deg, #e048ff, #4aeaff);
+}
+
+.focus+span::before {
+  top: -5px;
+}
+
+.focus+span::after {
+  width: 100%;
+}
+
+.logbtn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: linear-gradient(60deg, orange, brown);
+  font-size: 1.2rem;
+  background-size: 200%;
+  color: white;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.logbtn:hover {
+  background-position: right;
+}
+
+.bottom {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 13px;
 }

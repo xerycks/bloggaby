@@ -16,6 +16,8 @@ body {
   font-size: 12px;
   letter-spacing: 5px;
   padding: 5px 20px 5px;
+  position: fixed;
+  top: 0;
 }
 
 .navbar-brand {
@@ -166,11 +168,11 @@ body {
   color: #adadad;
   transform: translateY(-50%);
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .txtb span::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 40px;
   right: 0px;
@@ -179,11 +181,11 @@ body {
   background: linear-gradient(60deg, #e048ff, #4aeaff);
 }
 
-.focus+span::before {
+.focus + span::before {
   top: -5px;
 }
 
-.focus+span::after {
+.focus + span::after {
   width: 100%;
 }
 
@@ -199,7 +201,7 @@ body {
   font-weight: 600;
   outline: none;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .logbtn:hover {

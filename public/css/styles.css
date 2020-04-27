@@ -17,7 +17,10 @@ body {
   letter-spacing: 5px;
   padding: 5px 20px 5px;
   position: fixed;
+<<<<<<< HEAD
   top: 0;
+=======
+>>>>>>> b0d09efd8bda23b0a6252dbb24f7b256fee4b222
 }
 
 .navbar-brand {
@@ -25,8 +28,6 @@ body {
   font-family: "Hammersmith One", sans-serif;
   letter-spacing: 3px;
   font-size: 3rem;
-  position: relative;
-  top: 5px;
 }
 
 .navbar-nav li a {

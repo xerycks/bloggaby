@@ -1,24 +1,198 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <title>Rishabh</title>
-  <meta charset="utf-8">
-  <script src="https://kit.fontawesome.com/4b33ceaf3d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-  <nav class="navbar navbar-default">
-
-    <div class="navbar-header">
-      <p class="navbar-brand">BLOGABBY</p>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li id="home"><a href="/">HOME</a></li>
-      <li id="contact"><a href="/contact">CONTACT</a></li>
-    </ul>
-  </nav>
-
-<body>
-  <div>
+  <head>
+    <title>Rishabh Rathore</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a 18 year old guy trying to master web & app development, and having fun in my life.">
+    <meta name="author" content="Rishabh Rathore">
+    <meta property="og:url" content="https://xerycks.tech/">
+    <link rel="icon" type="image/png" href="includes/images/favicon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <canvas id="stars"></canvas>
+      <canvas id="yahia"></canvas>
+      
+      <div class="container">
+        <div class="template color-green" data-template="home">
+          <main>
+            <h1><span>Hi, I'm
+                <mark>Rishabh Rathore</mark> !</span></h1>
+            <div class="p">
+                <p>Currently enrolled in Second Year CSE degree from <wbr><strong> Army Institute of Technology, Pune.</strong></p>
+                <p>Almost FullStack Developer, I like to develop things in the modern and unique way. <strong> Design </strong>- thats my favorite part of any project , I gained a lot of experience design by my own projects and also working for some startups. Idk but I am comfortable with all the techstacks. So it makes a FullStack Developer Ultra Pro Max. Just Kidding 🤭.</p>
+            </div>
+            <div class="p"><span><a href="mailto:rishabhrathore_19264@aitpuen.edu.in">rishabhrathore_19264@aitpune.edu.in</a></span><span>(+91) 79769 89308</span></div>
+            <div class="links">
+                <a class="link router color-yellow" href="#bucket" title="View my bucket list">View my bucket list</a>
+                <a class="link router color-green" href="#secret" title="Tell me a secret">Tell me a secret</a>
+                <a class="link color-blue" href="#projects" title="View my Projects" target="_blank">View my projects</a>
+                <a class="link color-red" href="Resume.pdf" title="Download my résumé" target="_blank">Download my résumé</a>
+            </div>
+          </main>
+          <footer>
+            <div class="links"><a class="link small alt" href="https://facebook.com/xerycks" title="Facebook (@Xerycks)" target="_blank">Facebook</a><a class="link small alt" href="https://instagram.com/xerycks" title="Instagram (@Xerycks)" target="_blank">Instagram</a><a class="link small alt" href="https://linkedin.com/in/xerycks" title="LinkedIn (@Xerycks)" target="_blank">LinkedIn</a><a class="link small alt" href="https://github.com/xerycks" title="GitHub (@Xerycks)" target="_blank">GitHub</a></div>
+          </footer>
+        </div>
+        
+        <div class="template color-yellow" data-template="bucket">
+          <main>
+            <div class="h1"><span></span><span>Things to do before 
+                <mark>2022</mark></span></div>
+            <div class="small"><span>What’s up next?</span></div>
+            <div class="p"><span>Have my Apps launched on playstore</span></div>
+            <div class="p"><span>Teach web design to 20 people without anything in return</span></div>
+            <div class="p"><span>Read MCU comics for a whole week</span></div>
+            <div class="links"><a class="link router" href="#bucket/all" title="View all the bucket list">View all the bucket list</a></div>
+          </main>
+          <footer>
+            <div class="links"><a class="link router small alt" href="#secret" title="Tell me a secret">Tell me a secret</a><a class="link router small alt" href="#" title="Back to home">Back to home</a></div>
+          </footer>
+        </div>
+        <div class="template color-yellow" data-template="bucketAll">
+          <main>
+            <div class="h1"><span>These are the things</span><span>in my
+                <mark>bucket list</mark></span></div>
+            <div class="small"><span>Life is toooo BIG to have tiny dreams,</span><span></span></div>
+            <ul class="list blocks">
+              <li class="next"><span>Up Next.</span><span>Pandemic ke baad paani puri khaani h</span></li>
+              <li class="pending"><span>02.</span><span>Have my apps launched on playstore</span></li>
+              <li class="pending"><span>03.</span><span>Become a DJ in new year party</span></li>
+              <li class="pending"><span>04.</span><span>Record a documentary about some part of my life</span></li>
+              <li class="progress"><span>In progress..</span><span>Teach web design to 20 people without anything in return</span></li>
+              <li class="pending"><span>06.</span><span>Teach 20 homeless how to code and change their lives</span></li>
+              <li class="pending"><span>07.</span><span>Visit all 28 states of India in 6 months</span></li>
+              <li class="archived"><a href="" title="Watch Harry Potter’s movies all at once without sleeping" target="_blank"><span>Aug 20, 2018.</span><span>Watch Harry Potter’s movies all at once without sleeping</span></a></li>
+              <li class="archived"><a href="" title="Watch all 20 MCU movies in a week" target="_blank"><span>June 21, 2020.</span><span>Watch all 20 MCU movies in a week</span></a></li>
+              <li class="pending"><span>10.</span><span>Read MCU comics for a whole week</span></li>
+              <li class="pending"><span>11.</span><span>Have a monkey</span></li>
+              <li class="pending"><span>12.</span><span>Have a baby lion</span></li>
+              <li class="pending"><span>13.</span><span>Play with a baby panda</span></li>
+              <li class="pending"><span>14.</span><span>Visit african Forests</span></li>
+              <li class="pending"><span>15.</span><span>Visiting north & south poles</span></li>
+              <li class="pending"><span>16.</span><span>Read the license for all the softwares I usually use</span></li>
+              <li class="pending"><span>17.</span><span>Publish a book</span></li>
+              <li class="pending"><span>18.</span><span>Write a one paper song</span></li>
+              <li class="archived"><span>June 30, 2019</span><span>Watch Game of Thrones</span></li>
+              <li class="pending"><span>20.</span><span>Learn how to play an instrument</span></li>
+              <li class="pending"><span>21.</span><span>Ride a four wheelers in the desert</span></li>
+              <li class="pending"><span>22.</span><span>Live in a treehouse for 6 months</span></li>
+              <li class="pending"><span>23.</span><span>Rent a boat for a one day with my future wife all alone in a river</span></li>
+              <li class="pending"><span>24.</span><span>Visit Disneyland with my future daughter</span></li>
+              <li class="pending"><span>25.</span><span>Visit Switzerland</span></li>
+              <li class="pending"><span>26.</span><span>Visit La Villa Sola Cabiati in Italy</span></li>
+              <li class="pending"><span>27.</span><span>Face a fear</span></li>
+              <li class="pending"><span>28.</span><span>Have my own house</span></li>
+              <li class="pending"><span>29.</span><span>Face a fear</span></li>
+              <li class="pending"><span>30.</span><span>Go to a major festival in China</span></li>
+              <li class="archived"><span>Oct 13, 2019</span><span>Go on a hike</span></li>
+              <li class="pending"><span>32.</span><span>Skydiving</span></li>
+              <li class="pending"><span>33.</span><span>Bungee jumping</span></li>
+              <li class="pending"><span>34.</span><span>Spend a night on the beach</span></li>
+              <li class="pending"><span>35.</span><span>Send a message in a bottle over the sea</span></li>
+              <li class="pending"><span>36.</span><span>Make a 3d model of myself using 3D printing</span></li>
+              <li class="pending"><span>37.</span><span>Eat a pizza in Italy</span></li>
+              <li class="pending"><span>38.</span><span>Take a walk through Italy</span></li>
+              <li class="pending"><span>39.</span><span>Speak Italian fluently</span></li>
+              <li class="pending"><span>40.</span><span>Speak 4 International languages fluently</span></li>
+              <li class="pending"><span>41.</span><span>Have a paintball fight with friends</span></li>
+              <li class="pending"><span>42.</span><span>Travel in Zero-g Flight</span></li>
+              <li class="pending"><span>43.</span><span>Have a paintball fight with friends</span></li>
+              <li class="pending"><span>44.</span><span>Visit Tesla factory & meet Elon Musk</span></li>
+              <li class="pending"><span>45.</span><span>Get my parents a house in a peaceful place</span></li>
+              <li class="pending"><span>46.</span><span>Start and achieve a 365 Day Happiness Challenge</span></li>
+              <li class="pending"><span>47.</span><span>Travel the world with my parents</span></li>
+              <li class="pending"><span>48.</span><span>Travel the world with someone I love</span></li>
+              <li class="pending"><span>49.</span><span>Go in a night club & dance with my parents</span></li>
+              <li class="pending"><span>50.</span><span>Ride a jetski</span></li>
+              <li class="pending"><span>51.</span><span>Have a vacation in Cordova</span></li>
+              <li class="pending"><span>52.</span><span>Visit the Walk of Fame</span></li>
+              <li class="pending"><span>53.</span><span>Visit all 7 continents in one year</span></li>
+              <li class="pending"><span>54.</span><span>Attend a live music concert</span></li>
+              <li class="pending"><span>55.</span><span>Learn self defense</span></li>
+              <li class="pending"><span>56.</span><span>Watch a full boring football game</span></li>
+              <li class="pending"><span>57.</span><span>Make delicious food to feed myself each day</span></li>
+              <li class="pending"><span>58.</span><span>Start a startup idea that sounds like a stupid idea.. But turns to be a successful business</span></li>
+              <li class="archived"><span>Aug 01, 2017</span><span>Solve a Rubik’s cube</span></li>
+              <li class="pending"><span>60.</span><span>Learn how to ride a horse</span></li>
+              <li class="pending"><span>61.</span><span>Learn how to shoot with an arc</span></li>
+              <li class="pending"><span>62.</span><span>Touch a dolphin</span></li>
+              <li class="pending"><span>63.</span><span>Build something using the Lego blocks</span></li>
+              <li class="pending"><span>64.</span><span>Wear a bear costume and hug random people from the street</span></li>
+              <li class="pending"><span>65.</span><span>Practice Kung Fu or Aikido</span></li>
+        </ul>
+            <div class="links"><a class="link router" href="#" title="Back to home">Back to home</a></div>
+          </main>
+        </div>
+        <div class="template color-red" data-template="projectsAll">
+          <main>
+            <div class="h1"><span></span><span>
+                <mark>latest projects</mark></span></div>
+            <div class="small"><span>These are some tiny projects I'm proud of creating,</span><span>contributing, or being part of.</span></div>
+            <ul class="list blocks">
+                  <li class="listItem"><a href="https://aitoss.club/" title="OSS Website" target="_blank"><span>Oct 18, 2020</span><span>AIT OSS Club's Website</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+                  <li class="listItem"><a href="http://rishabhrathore.me" title="OSS Website" target="_blank"><span>Nov 10, 2020</span><span>Project Portfolio</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+                  <li class="listItem"><a href="https://xerycks.tech/" title="OSS Website" target="_blank"><span>Nov 8, 2020</span><span>Personal Website</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+                  <li class="listItem"><a href="https://www.figma.com/file/ufesFzmW9z4XnGIHLfKBdg/AIT-Copy?node-id=0%3A1" title="Project Celestial" target="_blank"><span>Aug 15, 2020</span><span>Project Celestial</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+                  <li class="listItem"><a href="https://www.figma.com/file/KCZFOQMSoSlPS2U6gFaAvB/Musicaa?node-id=0%3A1" title="Musicaa" target="_blank"><span>July 30, 2020</span><span>Musicaa</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+                  <li class="listItem"><a href="http://rishabhrathore.me/tindog" title="Tinder for dogs" target="_blank"><span>April 23, 2020</span><span>Tindog</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+          </ul>
+            <div class="links"><a class="link router" href="#" title="Back to home">Back to home</a></div>
+          </main>
+        </div>
+        <div class="template color-blue" data-template="thoughtsAll">
+          <main>
+            <div class="h1"><span></span><span>
+                <mark>my thoughts</mark></span></div>
+            <div class="small"><span>Here I will write about my breakdowns, about my</span><span>experiences, and about my failures.</span></div>
+            <div class="h1 color-red"><span>Coming Soon...</span></div>
+            <div class="small"><span>Under development currently, till then connect with me on</span><span></span></div>
+            <div class="links"><a href=""><a class="link small alt" href="https://facebook.com/xerycks" title="Facebook (@Xerycks)" target="_blank">Facebook</a><a class="link small alt" href="https://instagram.com/xerycks" title="Instagram (@Xerycks)" target="_blank">Instagram</a><a class="link small alt" href="https://linkedin.com/in/xerycks" title="LinkedIn (@Xerycks)" target="_blank">LinkedIn</a><a class="link small alt" href="https://github.com/xerycks" title="GitHub (@Xerycks)" target="_blank">GitHub</a></a></div>
+            <!-- <ul class="list blocks">
+                  <li class="listItem"><a href="https://www.facebook.com/photo.php?fbid=1176147599208126&amp;set=a.111034245719472&amp;type=3" title="Try not to be ashamed" target="_blank"><span>Feb 6, 2019.</span><span>Try not to be ashamed</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+                  <li class="listItem"><a href="https://www.facebook.com/photo.php?fbid=1166524440170442&amp;set=a.138536736302556&amp;type=3" title="You don't have to come along" target="_blank"><span>Jan 22, 2019.</span><span>You don't have to come along</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+                  <li class="listItem"><a href="https://www.facebook.com/photo.php?fbid=1152396111583275&amp;set=a.138536736302556&amp;type=3" title="My 2018 achievements" target="_blank"><span>Dec 31, 2018.</span><span>My 2018 achievements</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path>
+                      </svg></a></li>
+            </ul> -->
+            <div class="links"><a class="link router" href="#" title="Back to home">Back to home</a></div>
+          </main>
+        </div>
+        <div class="template color-grayscale" data-template="notFound">
+          <main>
+            <div class="h1"><span>The page you’re</span><span>looking for 
+                <mark>doesn’t exist</mark>..</span></div>
+            <div class="p"><span>We’ll be getting back home within 
+                <time>5</time> seconds.</span></div>
+            <div class="links"><a class="link router" href="#" title="Back to home now" data-callback="notFoundCallback">Back to home now</a></div>
+          </main>
+        </div>

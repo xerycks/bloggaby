@@ -55,8 +55,8 @@ app.get("/contact", (req, res) =>
   })
 );
 
-app.get("/compose", function (req, res) {
-  res.render("compose");
+app.get("/secret", function (req, res) {
+  res.redirect('/#secret');
 });
 
 app.post("/compose", function (req, res) {
